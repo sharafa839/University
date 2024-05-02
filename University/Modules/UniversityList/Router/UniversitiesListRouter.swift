@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class UniversitiesListRouter: PresenterToRouterProtocol {
+final class UniversitiesListRouter: UniversitiesListPresenterToRouterProtocol {
     
     
     // MARK: - Private properties -
@@ -16,9 +16,9 @@ final class UniversitiesListRouter: PresenterToRouterProtocol {
     static func createModule() -> UniversitiesListViewController {
         
         let view = UIStoryboard.mainStoryboard.instantiateViewController(withIdentifier: "UniversitiesListViewController") as! UniversitiesListViewController
-        let presenter: ViewToPresenterProtocol & InteractorToPresenterProtocol = UniversitiesListPresenter()
+        let presenter: UniversitiesListViewToPresenterProtocol & InteractorToPresenterProtocol = UniversitiesListPresenter()
         let interactor: PresenterToInteractorProtocol = UniversitiesListInteractor()
-        let router: PresenterToRouterProtocol = UniversitiesListRouter()
+        let router: UniversitiesListPresenterToRouterProtocol = UniversitiesListRouter()
         view.presenter = presenter
         presenter.view = view
         presenter.router = router

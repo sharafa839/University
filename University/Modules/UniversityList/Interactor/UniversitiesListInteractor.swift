@@ -13,7 +13,7 @@ final class UniversitiesListInteractor {
     // MARK: - Private properties -
     
     private var repo: UniversityNetworkingProtocol
-    weak var view: PresenterToViewProtocol!
+    weak var view: UniversitiesListPresenterToViewProtocol!
     weak var presenter: InteractorToPresenterProtocol?
     init(repo: UniversityNetworkingProtocol = UniversityRepo()) {
         self.repo = repo

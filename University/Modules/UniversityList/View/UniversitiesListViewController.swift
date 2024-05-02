@@ -14,7 +14,7 @@ final class UniversitiesListViewController: UIViewController {
 
     // MARK: - Public properties -
     
-    var presenter: ViewToPresenterProtocol!
+    var presenter: UniversitiesListViewToPresenterProtocol!
     
     // MARK: - Private properties -
     
@@ -41,7 +41,7 @@ final class UniversitiesListViewController: UIViewController {
 }
 
 // MARK: - View Interface -
-extension UniversitiesListViewController: PresenterToViewProtocol {
+extension UniversitiesListViewController: UniversitiesListPresenterToViewProtocol {
 
     func showErrorMessage(_ errorMessage: String) {
         hideActivityIndicator()

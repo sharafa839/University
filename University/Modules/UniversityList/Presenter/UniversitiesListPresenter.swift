@@ -10,9 +10,9 @@ final class UniversitiesListPresenter {
     
     // MARK: - Private properties -
     
-    var view: PresenterToViewProtocol?
+    var view: UniversitiesListPresenterToViewProtocol?
     var interactor: PresenterToInteractorProtocol?
-    var router: PresenterToRouterProtocol?
+    var router: UniversitiesListPresenterToRouterProtocol?
     var universities: [University] = []
     var universitiesCount: Int {
         return universities.count
@@ -21,7 +21,7 @@ final class UniversitiesListPresenter {
 
 // MARK: - Extensions -
 
-extension UniversitiesListPresenter: ViewToPresenterProtocol {
+extension UniversitiesListPresenter: UniversitiesListViewToPresenterProtocol {
     
     func viewDidLoad() {
         getAllUniversities()

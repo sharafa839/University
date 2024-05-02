@@ -7,27 +7,31 @@
 
 import UIKit
 
-protocol PresenterToRouterProtocol: AnyObject {
+protocol UniversitiesListPresenterToRouterProtocol: AnyObject {
     var viewController: UIViewController? { get set }
     
     func pushToUniversityDetails(input: UniversityDetailsModuleInput)
     static func createModule() -> UniversitiesListViewController
 }
 
-protocol PresenterToViewProtocol: IndicatableView {
+protocol UniversitiesListPresenterToViewProtocol: IndicatableView {
+    
     func showErrorMessage(_ errorMessage: String)
     func reloadDate()
 }
 
-protocol ViewToPresenterProtocol: AnyObject {
-    var view: PresenterToViewProtocol? { get set }
+protocol UniversitiesListViewToPresenterProtocol: AnyObject {
+    
+    var view: UniversitiesListPresenterToViewProtocol? { get set }
     var interactor: PresenterToInteractorProtocol? { get set }
-    var router: PresenterToRouterProtocol? { get set }
+    var universities: [University] { get }
+    var universitiesCount: Int { get }
+    var router: UniversitiesListPresenterToRouterProtocol? { get set }
+    
     func getAllUniversities()
     func viewDidLoad()
     func didSelectUniversity(_ university: University)
-    var universities: [University] { get }
-    var universitiesCount: Int { get }
+   
 }
 
 protocol PresenterToInteractorProtocol: AnyObject {
