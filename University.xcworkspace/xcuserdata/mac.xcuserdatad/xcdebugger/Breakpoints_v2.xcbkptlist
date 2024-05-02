@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "7059F6EB-BC72-445D-9334-68C08E56CB7F"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3169680B-6E70-4101-A138-659D4CD360AB"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "University/Modules/UniversityList/ArticleListPresenter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "getAllUniversities()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "3169680B-6E70-4101-A138-659D4CD360AB - 8f5da61187df8c72"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (University.RequestResult&lt;Swift.Array&lt;University.UniversityResponseElement&gt;&gt;) -&gt; () in University.UniversitiesListPresenter.getAllUniversities() -&gt; ()"
+                  moduleName = "University"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mac/Desktop/Projects/University/University/Modules/UniversityList/ArticleListPresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "705">
+               </Location>
+               <Location
+                  uuid = "3169680B-6E70-4101-A138-659D4CD360AB - 8f5da61187df8fb0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (University.RequestResult&lt;Swift.Array&lt;University.UniversityResponseElement&gt;&gt;) -&gt; () in University.UniversitiesListPresenter.getAllUniversities() -&gt; ()"
+                  moduleName = "University"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mac/Desktop/Projects/University/University/Modules/UniversityList/ArticleListPresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "998">
+               </Location>
+               <Location
+                  uuid = "3169680B-6E70-4101-A138-659D4CD360AB - 8f5da61187df8fb0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (University.RequestResult&lt;Swift.Array&lt;University.UniversityResponseElement&gt;&gt;) -&gt; () in University.UniversitiesListPresenter.getAllUniversities() -&gt; ()"
+                  moduleName = "University"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mac/Desktop/Projects/University/University/Modules/UniversityList/ArticleListPresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "705">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FDE57D82-10A1-4A98-966A-858E4B6459BB"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "University/Modules/UniversityList/Interactor/UniversitiesListInteractor.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "getUniversitiesFromServer()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
