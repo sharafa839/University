@@ -46,6 +46,10 @@ extension UniversitiesListViewController: UniversitiesListPresenterToViewProtoco
     func showErrorMessage(_ errorMessage: String) {
         hideActivityIndicator()
         refreshControl.endRefreshing()
+        let alertController: UIAlertController = UIAlertController(title: "error", message: errorMessage, preferredStyle: .alert)
+               let okAction: UIAlertAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+               alertController.addAction(okAction)
+               present(alertController, animated: true, completion: nil)
     }
     
     func reloadDate() {
